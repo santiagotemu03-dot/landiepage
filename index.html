@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- 1) PEGA AQUÍ el primer bloque de Google Tag Manager (<script>), lo más arriba del head -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas en Bogotá | Los mejores sitios para salir en pareja</title>
+  <meta name="description" content="Descubre restaurantes, cafés, bares, museos y parques en Bogotá para tu próxima cita en pareja.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 2) PEGA AQUÍ el bloque <noscript> de Google Tag Manager, justo después de abrir body -->
+
+  <!-- 1. HEADER -->
+  <header id="header">
+    <a href="#hero" class="logo">Citas Bogotá</a>
+    <nav>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#explorar">Explorar sitios</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. HERO -->
+    <section id="hero">
+      <h1>Los mejores planes para una cita en Bogotá</h1>
+      <p>Restaurantes, cafés, bares, museos y parques para sorprender a tu pareja. Explora, guarda tus favoritos y elige juntos.</p>
+      <a href="#explorar" id="btn-cta-principal" class="btn" data-cta="hero">Inscribirme Ahora</a>
+    </section>
+
+    <!-- 3. BENEFICIOS -->
+    <section id="beneficios">
+      <h2>¿Por qué usar Citas Bogotá?</h2>
+      <ul>
+        <li>
+          <h3>Sitios reales</h3>
+          <p>Lugares actuales de la ciudad, tomados de OpenStreetMap.</p>
+        </li>
+        <li>
+          <h3>Para todos los gustos</h3>
+          <p>Desde una cena romántica hasta un paseo por un parque o un museo.</p>
+        </li>
+        <li>
+          <h3>Guarda y decide en pareja</h3>
+          <p>Marca tus favoritos y tengan su lista de planes lista para el fin de semana.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. CTA -->
+    <section id="cta-1">
+      <h2>¿Listos para su próxima cita?</h2>
+      <a href="#explorar" class="btn" data-cta="cta_1">Explorar sitios</a>
+    </section>
+
+    <!-- 5. EXPLICACIÓN + EXPLORADOR DE SITIOS -->
+    <section id="explorar">
+      <h2>Así funciona</h2>
+      <ol>
+        <li>Elige el tipo de plan que se les antoja.</li>
+        <li>Mira los sitios y ábrelos en el mapa.</li>
+        <li>Guarda los que les gusten y elijan juntos.</li>
+      </ol>
+
+      <div id="filtros">
+        <button type="button" class="filtro activo" data-cat="restaurante">Restaurantes</button>
+        <button type="button" class="filtro" data-cat="cafe">Cafés</button>
+        <button type="button" class="filtro" data-cat="bar">Bares</button>
+        <button type="button" class="filtro" data-cat="museo">Museos</button>
+        <button type="button" class="filtro" data-cat="parque">Parques</button>
+        <button type="button" class="filtro" data-cat="atraccion">Atracciones</button>
+      </div>
+
+      <label for="buscador">Buscar por nombre</label>
+      <input type="search" id="buscador" placeholder="Ej: Andrés, Usaquén, Monserrate...">
+
+      <p id="estado">Cargando sitios...</p>
+      <div id="tarjetas"></div>
+
+      <h3>Nuestra lista de planes</h3>
+      <p id="favoritos-vacio">Aún no han guardado ningún sitio.</p>
+      <ul id="favoritos"></ul>
+    </section>
+
+    <!-- 6. TESTIMONIOS -->
+    <section id="testimonios">
+      <h2>Lo que dicen las parejas</h2>
+      <blockquote>
+        <p>Llevábamos años yendo al mismo restaurante. Aquí encontramos un café en La Candelaria que amamos.</p>
+        <cite>Laura y Andrés</cite>
+      </blockquote>
+      <blockquote>
+        <p>Perfecto para decidir sin pelear. Cada uno guarda sus favoritos y elegimos entre los dos.</p>
+        <cite>Camila y Santiago</cite>
+      </blockquote>
+      <blockquote>
+        <p>Descubrimos parques que no sabíamos que existían en Bogotá.</p>
+        <cite>Valentina y Mateo</cite>
+      </blockquote>
+    </section>
+
+    <!-- 7. CTA 2 -->
+    <section id="cta-2">
+      <h2>Recibe ideas de citas cada semana</h2>
+      <a href="#contacto" class="btn" data-cta="cta_2">Quiero recibir ideas</a>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details data-faq="gratis">
+        <summary>¿Es gratis?</summary>
+        <p>Sí, explorar los sitios es completamente gratis.</p>
+      </details>
+      <details data-faq="origen-datos">
+        <summary>¿De dónde salen los sitios?</summary>
+        <p>De OpenStreetMap, un mapa colaborativo y abierto, filtrado para Bogotá.</p>
+      </details>
+      <details data-faq="favoritos">
+        <summary>¿Se guardan mis favoritos?</summary>
+        <p>Se guardan en tu navegador, así que siguen ahí cuando vuelvas.</p>
+      </details>
+      <details data-faq="otras-ciudades">
+        <summary>¿Habrá otras ciudades?</summary>
+        <p>Por ahora solo Bogotá, pronto más.</p>
+      </details>
+    </section>
+
+    <!-- 9. PRE-FOOTER (formulario HubSpot) -->
+    <section id="contacto">
+      <h2>Recibe ideas de citas en tu correo</h2>
+      <p>Déjanos tus datos y te escribimos con planes nuevos en Bogotá.</p>
+      <!-- 3) REEMPLAZA este bloque por el código de inserción de tu formulario de HubSpot -->
+      <div id="hubspot-form"></div>
+      <script charset="utf-8" type="text/javascript" src="//js-na1.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "na1",
+          portalId: "TU_PORTAL_ID",
+          formId: "TU_FORM_ID",
+          target: "#hubspot-form"
+        });
+      </script>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER -->
+  <footer id="footer">
+    <p>&copy; 2026 Citas Bogotá</p>
+    <nav>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#explorar">Explorar</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <p>Datos de mapas &copy; colaboradores de <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
