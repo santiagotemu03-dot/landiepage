@@ -329,7 +329,14 @@ input::placeholder { color: var(--text-tertiary); }
 
 /* ===== CONTACTO (HubSpot) ===== */
 #contacto { max-width: 720px; }
-#hubspot-form { margin-top: 24px; padding: 32px; }
+/* Fondo claro: el texto oscuro del formulario de HubSpot (plan gratis) se lee bien */
+#hubspot-form {
+  margin-top: 24px;
+  padding: 32px;
+  background: #f5f8fa;
+  border-radius: var(--r-lg);
+  box-shadow: 0 0 0 1px rgba(212,160,60,0.35), 0 12px 40px rgba(0,0,0,0.5);
+}
 #hubspot-form .hs-form-field { margin-bottom: 16px; }
 #hubspot-form label { color: var(--text-body); text-transform: none; font-size: 13px; }
 #hubspot-form .hs-richtext { color: var(--text-body); }
